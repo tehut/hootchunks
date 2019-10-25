@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hootcache-api
+  labels:
+    app: hootcache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hootcache
+  template:
+    metadata:
+      labels:
+        app: hootcache
+    spec:
+      containers:
+      - name: hootcache-api
+        image: tahootyhoot/hootcache
+        ports:
+        - containerPort: 5000
+        env:
+        - name: SERVICE
+          value: SERVICE_VALUE

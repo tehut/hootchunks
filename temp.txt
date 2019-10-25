@@ -1,0 +1,701 @@
+==> Docker <==
+-- Logs begin at Mon 2019-10-21 20:19:06 UTC, end at Mon 2019-10-21 20:20:08 UTC. --
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186111370Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186206775Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186456750Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}]" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186619442Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186813738Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc000738280, CONNECTING" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.186683647Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187362421Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187564882Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}]" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187654987Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187711227Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc000738590, CONNECTING" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187921564Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc000738590, READY" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.187970257Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc000738280, READY" module=grpc
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.225886143Z" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.395212575Z" level=info msg="Graph migration to content-addressability took 0.00 seconds"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.395789796Z" level=warning msg="Your kernel does not support cgroup blkio weight"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.395813479Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.395973612Z" level=warning msg="Your kernel does not support cgroup blkio throttle.read_bps_device"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.395995569Z" level=warning msg="Your kernel does not support cgroup blkio throttle.write_bps_device"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.396011739Z" level=warning msg="Your kernel does not support cgroup blkio throttle.read_iops_device"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.396027578Z" level=warning msg="Your kernel does not support cgroup blkio throttle.write_iops_device"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.396602103Z" level=info msg="Loading containers: start."
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.723986519Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.832629822Z" level=info msg="Loading containers: done."
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.847205910Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.847834724Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.862398599Z" level=info msg="Docker daemon" commit=039a7df9ba graphdriver(s)=overlay2 version=18.09.9
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.863264421Z" level=info msg="Daemon has completed initialization"
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.887336470Z" level=info msg="API listen on /var/run/docker.sock"
+Oct 21 20:19:17 minikube systemd[1]: Started Docker Application Container Engine.
+Oct 21 20:19:17 minikube dockerd[2351]: time="2019-10-21T20:19:17.887778452Z" level=info msg="API listen on [::]:2376"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.612571896Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.613164877Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.621082549Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.621590426Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.657234181Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.657729650Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.688431070Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:37 minikube dockerd[2351]: time="2019-10-21T20:19:37.689122157Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:42 minikube dockerd[2351]: time="2019-10-21T20:19:42.780647109Z" level=warning msg="failed to retrieve runc version: unknown output format: runc version commit: 425e105d5a03fabd737a126ad93d62a9eeede87f\nspec: 1.0.1-dev\n"
+Oct 21 20:19:42 minikube dockerd[2351]: time="2019-10-21T20:19:42.781279349Z" level=warning msg="failed to retrieve docker-init version: exec: \"docker-init\": executable file not found in $PATH"
+Oct 21 20:19:43 minikube dockerd[2351]: time="2019-10-21T20:19:43.593366976Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/d7fc0139e8a493ef8518a16e570379493bf228abdc7723d2d58a49db8a1e99b4/shim.sock" debug=false pid=2951
+Oct 21 20:19:43 minikube dockerd[2351]: time="2019-10-21T20:19:43.608538479Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/753606621ef5411e1c6eae3987954bd430c61e45f7c11fba5a9952a2b8cee00e/shim.sock" debug=false pid=2967
+Oct 21 20:19:43 minikube dockerd[2351]: time="2019-10-21T20:19:43.643366892Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/9095ee402d8b6252f74d08788325e201d013a390e232730fb5dee430e2f7d06c/shim.sock" debug=false pid=2979
+Oct 21 20:19:43 minikube dockerd[2351]: time="2019-10-21T20:19:43.647235002Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/ed75b9a448f9909dbfcdad769db57da50d152b727b58250d2b6206847e26e338/shim.sock" debug=false pid=2986
+Oct 21 20:19:43 minikube dockerd[2351]: time="2019-10-21T20:19:43.649177221Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/f13e63931ffc7b67cc84debdca879e78f79ba44300776c06411fad8bc31b8b87/shim.sock" debug=false pid=2984
+Oct 21 20:19:44 minikube dockerd[2351]: time="2019-10-21T20:19:44.350825489Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/39ecf57435d47ebee8e50eab2ab36d48783470a2569f35e5bca41bef1295c83d/shim.sock" debug=false pid=3178
+Oct 21 20:19:44 minikube dockerd[2351]: time="2019-10-21T20:19:44.404076341Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/189b2b2382e4b2a5d3730cb5e7e66a3c48741a192acdce404d33e2027515b6ef/shim.sock" debug=false pid=3195
+Oct 21 20:19:44 minikube dockerd[2351]: time="2019-10-21T20:19:44.443112552Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/35dc27f2eadd5fbcd361513d0a4fe102343d761c7d2978ed8c8c63743100952a/shim.sock" debug=false pid=3219
+Oct 21 20:19:44 minikube dockerd[2351]: time="2019-10-21T20:19:44.456545208Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/428fec76b0941eae33644ec41d1bbacfd9d86ba57c70b3404af4c16e247633d0/shim.sock" debug=false pid=3220
+Oct 21 20:19:44 minikube dockerd[2351]: time="2019-10-21T20:19:44.462397712Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/ce565dbe349921715e61e3cfbd9bedf2b1114a5fa7863fb0fb3078a800c96208/shim.sock" debug=false pid=3236
+Oct 21 20:19:51 minikube dockerd[2351]: time="2019-10-21T20:19:51.977936769Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/31d05a911375ce9ed90ac6182a0b19224106eacbbd0cc7c7ecc44bf688da1b2b/shim.sock" debug=false pid=3489
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.090331193Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/79bee248ce28e3ab9921422988fc0a6f584e6b7cf0df194bebd916501aec6a8f/shim.sock" debug=false pid=3519
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.097707508Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/085faee53a109f92cb86e9677a713bf31c224074ff76b2a8c1865c457607faff/shim.sock" debug=false pid=3525
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.110843164Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/f796632b88207657529a3976d432727d818a5e7a55c74eb421b9daf5f876ff67/shim.sock" debug=false pid=3532
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.535117213Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/707d36505c2ed6ebb56506f1275c1a28937dac720d972b63594aff53a577e07a/shim.sock" debug=false pid=3698
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.606278497Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/2ab6054ef170d37e523ba904594a86ee70a181949cb8250b2946e57f3936fc61/shim.sock" debug=false pid=3718
+Oct 21 20:19:52 minikube dockerd[2351]: time="2019-10-21T20:19:52.923765035Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/034a8a8a7a06cba4905d3c788a4b03712881b6c54a1ce895208debfe226eee58/shim.sock" debug=false pid=3780
+Oct 21 20:19:53 minikube dockerd[2351]: time="2019-10-21T20:19:53.308196535Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/75ae7ffdb703720e93d60e159d551f310fd1221b9041675fc97fab8e05e4b6bb/shim.sock" debug=false pid=3866
+Oct 21 20:19:53 minikube dockerd[2351]: time="2019-10-21T20:19:53.311703810Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/5ff1a248534f3adabf0ba005f4b18a9a10b412fe3e210acac2913ca562d1e891/shim.sock" debug=false pid=3871
+Oct 21 20:19:54 minikube dockerd[2351]: time="2019-10-21T20:19:54.766386992Z" level=info msg="shim containerd-shim started" address="/containerd-shim/moby/889dccc46c48fafebf308bab84cc5de37118a28d0fadcac3c5f954ddb2701b62/shim.sock" debug=false pid=4043
+
+==> container status <==
+CONTAINER           IMAGE                                                                                                                                    CREATED             STATE               NAME                       ATTEMPT             POD ID
+889dccc46c48f       0439eb3e11f19                                                                                                                            15 seconds ago      Running             nginx-ingress-controller   1                   707d36505c2ed
+5ff1a248534f3       bf261d1579144                                                                                                                            15 seconds ago      Running             coredns                    1                   085faee53a109
+75ae7ffdb7037       bf261d1579144                                                                                                                            15 seconds ago      Running             coredns                    1                   31d05a911375c
+034a8a8a7a06c       c21b0c7400f98                                                                                                                            16 seconds ago      Running             kube-proxy                 1                   79bee248ce28e
+2ab6054ef170d       4689081edb103                                                                                                                            16 seconds ago      Running             storage-provisioner        1                   f796632b88207
+35dc27f2eadd5       301ddc62b80b1                                                                                                                            24 seconds ago      Running             kube-scheduler             1                   9095ee402d8b6
+189b2b2382e4b       06a629a7e51cd                                                                                                                            24 seconds ago      Running             kube-controller-manager    1                   753606621ef54
+428fec76b0941       b2756210eeabf                                                                                                                            24 seconds ago      Running             etcd                       1                   d7fc0139e8a49
+ce565dbe34992       bd12a212f9dcb                                                                                                                            24 seconds ago      Running             kube-addon-manager         1                   f13e63931ffc7
+39ecf57435d47       b305571ca60a5                                                                                                                            24 seconds ago      Running             kube-apiserver             1                   ed75b9a448f99
+a8c940edea948       quay.io/kubernetes-ingress-controller/nginx-ingress-controller@sha256:0c4941fa8c812dd44297b5f4900e3b26c3e6a8a42940e48fe9a1a585fe8f7e25   5 minutes ago       Exited              nginx-ingress-controller   0                   dd5b23f6a8ead
+2a4481b907921       4689081edb103                                                                                                                            8 minutes ago       Exited              storage-provisioner        0                   7c9fb7768bdb2
+65db959c30a5d       bf261d1579144                                                                                                                            8 minutes ago       Exited              coredns                    0                   937aeda93941b
+68c28e88df622       bf261d1579144                                                                                                                            8 minutes ago       Exited              coredns                    0                   3beaf42913d00
+1d71aeff1328b       c21b0c7400f98                                                                                                                            8 minutes ago       Exited              kube-proxy                 0                   0a8519289af94
+c1e94a651df5c       bd12a212f9dcb                                                                                                                            8 minutes ago       Exited              kube-addon-manager         0                   7e883a2782050
+da68efd63ce37       301ddc62b80b1                                                                                                                            8 minutes ago       Exited              kube-scheduler             0                   7448783babde7
+e5f62e344a299       06a629a7e51cd                                                                                                                            8 minutes ago       Exited              kube-controller-manager    0                   9cb58798dd3c2
+3873207c49bdf       b305571ca60a5                                                                                                                            8 minutes ago       Exited              kube-apiserver             0                   81973db6a39ad
+585f6cf41c4f7       b2756210eeabf                                                                                                                            8 minutes ago       Exited              etcd                       0                   9fb9f1e7b6a84
+
+==> coredns [5ff1a248534f] <==
+.:53
+2019-10-21T20:19:59.883Z [INFO] plugin/reload: Running configuration MD5 = f64cb9b977c7dfca58c4fab108535a76
+2019-10-21T20:19:59.883Z [INFO] CoreDNS-1.6.2
+2019-10-21T20:19:59.883Z [INFO] linux/amd64, go1.12.8, 795a3eb
+CoreDNS-1.6.2
+linux/amd64, go1.12.8, 795a3eb
+2019-10-21T20:20:04.773Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+
+==> coredns [65db959c30a5] <==
+2019-10-21T20:11:57.997Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+.:53
+2019-10-21T20:12:01.030Z [INFO] plugin/reload: Running configuration MD5 = f64cb9b977c7dfca58c4fab108535a76
+2019-10-21T20:12:01.030Z [INFO] CoreDNS-1.6.2
+2019-10-21T20:12:01.030Z [INFO] linux/amd64, go1.12.8, 795a3eb
+CoreDNS-1.6.2
+linux/amd64, go1.12.8, 795a3eb
+2019-10-21T20:12:08.009Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+E1021 20:12:26.086352       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.086741       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.088668       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+2019-10-21T20:12:18.009Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+I1021 20:12:26.086283       1 trace.go:82] Trace[426550585]: "Reflector pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94 ListAndWatch" (started: 2019-10-21 20:11:56.084734631 +0000 UTC m=+0.523038096) (total time: 30.001455858s):
+Trace[426550585]: [30.001455858s] [30.001455858s] END
+E1021 20:12:26.086352       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.086352       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.086352       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: FailEe1021d  2to li0s:15:39.24t1957      *v1.Se  1 rerfvlecice: Gteor.got htt:p2s://1700] p.96.0.k1:443g/ap/mod/ki8s.io/client-go/@v11.v1/0.0+incservicoes?limmipatibtle/t=50ool0&ress/cacohurceVee/rrefslieon=0:ctor.go :9dial 4: Faticp 1led0 to w.96.0a.1:443: i/o tctimheo ut
+*v1.SerIvice:10 21 20:G12:26.e086t 728   h  t  1t trps://10.ace.go9:86.0.1:442] T3race/[108797ap2487]i/: "Reflev1/sctore pkrviceg/mod/k8ss.io/?resourcclieent-Vgo@v1ersio1n.=0.0+1incom6p8&timatible/tools/ceaout=9mc3h0se/ref&timeloeuctor.tSecongo:94 Ldists=570An&dWawatchtch="t rue: dial t(stcap 10.rted96.0.1:: 24043: c1onnect: c9-10-onnection 2r1 20efuse:11:56d
+.044907044 +E1021 020:15:00039.242489       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?resourceVersion=696&timeout=8m3s&timeoutSeconds=483&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.253397       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?resourceVersion=147&timeout=5m21s&timeoutSeconds=321&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+ UTC m=+0.483210503) (total time: 30.041797017s):
+Trace[1087972487]: [30.041797017s] [30.041797017s] END
+E1021 20:12:26.086741       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.086741       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.086741       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+I1021 20:12:26.088639       1 trace.go:82] Trace[1694244241]: "Reflector pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94 ListAndWatch" (started: 2019-10-21 20:11:56.044906949 +0000 UTC m=+0.483210402) (total time: 30.043705787s):
+Trace[1694244241]: [30.043705787s] [30.043705787s] END
+E1021 20:12:26.088668       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.088668       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.088668       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:15:39.241957       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Service: Get https://10.96.0.1:443/api/v1/services?resourceVersion=168&timeout=9m30s&timeoutSeconds=570&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.241957       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Service: Get https://10.96.0.1:443/api/v1/services?resourceVersion=168&timeout=9m30s&timeoutSeconds=570&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.241957       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Service: Get https://10.96.0.1:443/api/v1/services?resourceVersion=168&timeout=9m30s&timeoutSeconds=570&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.242489       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?resourceVersion=696&timeout=8m3s&timeoutSeconds=483&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.242489       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?resourceVersion=696&timeout=8m3s&timeoutSeconds=483&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.242489       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?resourceVersion=696&timeout=8m3s&timeoutSeconds=483&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.253397       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?resourceVersion=147&timeout=5m21s&timeoutSeconds=321&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.253397       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?resourceVersion=147&timeout=5m21s&timeoutSeconds=321&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E1021 20:15:39.253397       1 reflector.go:270] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to watch *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?resourceVersion=147&timeout=5m21s&timeoutSeconds=321&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+[INFO] SIGTERM: Shutting down servers then terminating
+
+==> coredns [68c28e88df62] <==
+E1021 20:12:26.085782       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.085910       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.087749       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+2019-10-21T20:11:59.719Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+.:53
+2019-10-21T20:12:01.034Z [INFO] plugin/reload: Running configuration MD5 = f64cb9b977c7dfca58c4fab108535a76
+2019-10-21T20:12:01.034Z [INFO] CoreDNS-1.6.2
+2019-10-21T20:12:01.034Z [INFO] linux/amd64, go1.12.8, 795a3eb
+CoreDNS-1.6.2
+linux/amd64, go1.12.8, 795a3eb
+2019-10-21T20:12:09.719Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+2019-10-21T20:12:19.719Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+I1021 20:12:26.085468       1 trace.go:82] Trace[174209999]: "Reflector pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94 ListAndWatch" (started: 2019-10-21 20:11:56.045217323 +0000 UTC m=+0.484249000) (total time: 30.040198947s):
+Trace[174209999]: [30.040198947s] [30.040198947s] END
+E1021 20:12:26.085782       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.085782       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.085782       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+I1021 20:12:26.085881       1 trace.go:82] Trace[117496296]: "Reflector pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94 ListAndWatch" (started: 2019-10-21 20:11:56.085306434 +0000 UTC m=+0.524338122) (total time: 30.000532525s):
+Trace[117496296]: [30.000532525s] [30.000532525s] END
+E1021 20:12:26.085910       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.085910       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.085910       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+I1021 20:12:26.087728       1 trace.go:82] Trace[1697033645]: "Reflector pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94 ListAndWatch" (started: 2019-10-21 20:11:56.045074514 +0000 UTC m=+0.484106186) (total time: 30.042618657s):
+Trace[1697033645]: [30.042618657s] [30.042618657s] END
+E1021 20:12:26.087749       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.087749       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+E1021 20:12:26.087749       1 reflector.go:126] pkg/mod/k8s.io/client-go@v11.0.0+incompatible/tools/cache/reflector.go:94: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: i/o timeout
+[INFO] SIGTERM: Shutting down servers then terminating
+
+==> coredns [75ae7ffdb703] <==
+.:53
+2019-10-21T20:19:59.926Z [INFO] plugin/reload: Running configuration MD5 = f64cb9b977c7dfca58c4fab108535a76
+2019-10-21T20:19:59.927Z [INFO] CoreDNS-1.6.2
+2019-10-21T20:19:59.927Z [INFO] linux/amd64, go1.12.8, 795a3eb
+CoreDNS-1.6.2
+linux/amd64, go1.12.8, 795a3eb
+2019-10-21T20:20:00.235Z [INFO] plugin/ready: Still waiting on: "kubernetes"
+
+==> dmesg <==
+[Oct21 20:18] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[ +30.328868] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[Oct21 20:19] systemd-fstab-generator[1296]: Ignoring "noauto" for root device
+[  +0.002672] systemd[1]: File /usr/lib/systemd/system/systemd-journald.service:35 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[  +0.000003] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[  +0.490856] vboxguest: loading out-of-tree module taints kernel.
+[  +0.015735] vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+[  +0.001771] vboxguest: misc device minor 57, IRQ 20, I/O port d020, MMIO at 00000000f0000000 (size 0x400000)
+[  +0.000189] vboxvideo: Unknown symbol ttm_bo_mmap (err 0)
+[  +0.000014] vboxvideo: Unknown symbol ttm_bo_global_release (err 0)
+[  +0.000007] vboxvideo: Unknown symbol ttm_pool_unpopulate (err 0)
+[  +0.000005] vboxvideo: Unknown symbol ttm_bo_manager_func (err 0)
+[  +0.000003] vboxvideo: Unknown symbol ttm_bo_global_init (err 0)
+[  +0.000001] vboxvideo: Unknown symbol ttm_bo_default_io_mem_pfn (err 0)
+[  +0.000008] vboxvideo: Unknown symbol ttm_bo_device_release (err 0)
+[  +0.000015] vboxvideo: Unknown symbol ttm_bo_kunmap (err 0)
+[  +0.000004] vboxvideo: Unknown symbol ttm_bo_del_sub_from_lru (err 0)
+[  +0.000008] vboxvideo: Unknown symbol ttm_bo_device_init (err 0)
+[  +0.000001] vboxvideo: Unknown symbol ttm_bo_init_mm (err 0)
+[  +0.000001] vboxvideo: Unknown symbol ttm_bo_dma_acc_size (err 0)
+[  +0.000005] vboxvideo: Unknown symbol ttm_tt_init (err 0)
+[  +0.000003] vboxvideo: Unknown symbol ttm_bo_kmap (err 0)
+[  +0.000008] vboxvideo: Unknown symbol ttm_bo_add_to_lru (err 0)
+[  +0.000002] vboxvideo: Unknown symbol ttm_bo_unref (err 0)
+[  +0.000002] vboxvideo: Unknown symbol ttm_mem_global_release (err 0)
+[  +0.000003] vboxvideo: Unknown symbol ttm_mem_global_init (err 0)
+[  +0.000011] vboxvideo: Unknown symbol ttm_bo_init (err 0)
+[  +0.000003] vboxvideo: Unknown symbol ttm_bo_validate (err 0)
+[  +0.000009] vboxvideo: Unknown symbol ttm_tt_fini (err 0)
+[  +0.000002] vboxvideo: Unknown symbol ttm_bo_eviction_valuable (err 0)
+[  +0.000001] vboxvideo: Unknown symbol ttm_pool_populate (err 0)
+[  +0.198194] hpet1: lost 725 rtc interrupts
+[  +0.012701] VBoxService 5.1.38 r122592 (verbosity: 0) linux.amd64 (May  9 2018 12:22:30) release log
+              00:00:00.001532 main     Log opened 2019-10-21T20:19:12.145856000Z
+[  +0.000057] 00:00:00.001612 main     OS Product: Linux
+[  +0.000024] 00:00:00.001643 main     OS Release: 4.15.0
+[  +0.000021] 00:00:00.001666 main     OS Version: #1 SMP Wed Sep 18 07:44:58 PDT 2019
+[  +0.000026] 00:00:00.001686 main     Executable: /usr/sbin/VBoxService
+              00:00:00.001687 main     Process ID: 2053
+              00:00:00.001687 main     Package type: LINUX_64BITS_GENERIC
+[  +0.000025] 00:00:00.001714 main     5.1.38 r122592 started. Verbose level = 0
+[  +0.009972] NFSD: the nfsdcld client tracking upcall will be removed in 3.10. Please transition to using nfsdcltrack.
+[  +5.009704] hpet1: lost 282 rtc interrupts
+[  +4.798135] systemd-fstab-generator[2273]: Ignoring "noauto" for root device
+[  +0.202948] hpet1: lost 318 rtc interrupts
+[  +5.008078] hpet_rtc_timer_reinit: 111 callbacks suppressed
+[  +0.000001] hpet1: lost 319 rtc interrupts
+[  +5.005897] hpet1: lost 318 rtc interrupts
+[  +5.007193] hpet1: lost 319 rtc interrupts
+[  +4.400975] systemd-fstab-generator[2765]: Ignoring "noauto" for root device
+[  +0.600129] hpet1: lost 318 rtc interrupts
+[  +5.004817] hpet1: lost 318 rtc interrupts
+[  +4.999963] hpet_rtc_timer_reinit: 21 callbacks suppressed
+[  +0.000002] hpet1: lost 318 rtc interrupts
+[  +5.000680] hpet1: lost 318 rtc interrupts
+[Oct21 20:20] hpet_rtc_timer_reinit: 67 callbacks suppressed
+[  +0.000001] hpet1: lost 318 rtc interrupts
+[  +5.003067] hpet1: lost 319 rtc interrupts
+
+==> kernel <==
+ 20:20:09 up 1 min,  0 users,  load average: 2.64, 0.89, 0.31
+Linux minikube 4.15.0 #1 SMP Wed Sep 18 07:44:58 PDT 2019 x86_64 GNU/Linux
+PRETTY_NAME="Buildroot 2018.05.3"
+
+==> kube-addon-manager [c1e94a651df5] <==
+Object: &{map["apiVersion":"v1" "kind":"ServiceAccount" "metadata":map["labels":map["addonmanager.kubernetes.io/mode":"Reconcile"] "name":"nginx-ingress" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""]]]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/serviceaccounts/nginx-ingress: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "rbac.authorization.k8s.io/v1beta1, Resource=clusterroles", GroupVersionKind: "rbac.authorization.k8s.io/v1beta1, Kind=ClusterRole"
+Name: "system:nginx-ingress", Namespace: ""
+Object: &{map["metadata":map["labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "kubernetes.io/bootstrapping":"rbac-defaults"] "name":"system:nginx-ingress" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""]] "rules":[map["apiGroups":[""] "resources":["configmaps" "endpoints" "nodes" "pods" "secrets"] "verbs":["list" "watch"]] map["resources":["nodes"] "verbs":["get"] "apiGroups":[""]] map["apiGroups":[""] "resources":["services"] "verbs":["get" "list" "watch"]] map["apiGroups":["extensions" "networking.k8s.io"] "resources":["ingresses"] "verbs":["get" "list" "watch"]] map["apiGroups":[""] "resources":["events"] "verbs":["create" "patch"]] map["resources":["ingresses/status"] "verbs":["update"] "apiGroups":["extensions" "networking.k8s.io"]]] "apiVersion":"rbac.authorization.k8s.io/v1beta1" "kind":"ClusterRole"]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/apis/rbac.authorization.k8s.io/v1beta1/clusterroles/system:nginx-ingress: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "rbac.authorization.k8s.io/v1beta1, Resource=roles", GroupVersionKind: "rbac.authorization.k8s.io/v1beta1, Kind=Role"
+Name: "system::nginx-ingress-role", Namespace: "kube-system"
+Object: &{map["rules":[map["resources":["configmaps" "pods" "secrets" "namespaces"] "verbs":["get"] "apiGroups":[""]] map["apiGroups":[""] "resourceNames":["ingress-controller-leader-nginx"] "resources":["configmaps"] "verbs":["get" "update"]] map["verbs":["create"] "apiGroups":[""] "resources":["configmaps"]] map["resources":["endpoints"] "verbs":["get"] "apiGroups":[""]]] "apiVersion":"rbac.authorization.k8s.io/v1beta1" "kind":"Role" "metadata":map["labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "kubernetes.io/bootstrapping":"rbac-defaults"] "name":"system::nginx-ingress-role" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""]]]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/apis/rbac.authorization.k8s.io/v1beta1/namespaces/kube-system/roles/system::nginx-ingress-role: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "/v1, Resource=serviceaccounts", GroupVersionKind: "/v1, Kind=ServiceAccount"
+Name: "storage-provisioner", Namespace: "kube-system"
+Object: &{map["apiVersion":"v1" "kind":"ServiceAccount" "metadata":map["labels":map["addonmanager.kubernetes.io/mode":"Reconcile"] "name":"storage-provisioner" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""]]]}
+from server for: "/etc/kubernetes/addons/storage-provisioner.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/serviceaccounts/storage-provisioner: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "/v1, Resource=pods", GroupVersionKind: "/v1, Kind=Pod"
+Name: "storage-provisioner", Namespace: "kube-system"
+Object: &{map["apiVersion":"v1" "kind":"Pod" "metadata":map["name":"storage-provisioner" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""] "labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "integration-test":"storage-provisioner"]] "spec":map["volumes":[map["hostPath":map["path":"/tmp" "type":"Directory"] "name":"tmp"]] "containers":[map["command":["/storage-provisioner"] "image":"gcr.io/k8s-minikube/storage-provisioner:v1.8.1" "imagePullPolicy":"IfNotPresent" "name":"storage-provisioner" "volumeMounts":[map["mountPath":"/tmp" "name":"tmp"]]]] "hostNetwork":%!q(bool=true) "serviceAccountName":"storage-provisioner"]]}
+from server for: "/etc/kubernetes/addons/storage-provisioner.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/pods/storage-provisioner: dial tcp 127.0.0.1:I844NFO: 3: co== nneKubect: rcneteonns addectoino nr erefconuseciled 
+completerroed art: n 201o9 ob-je10-2cts passed to app1T20ly
+:1erro5r when retrieving :44+c0urr0:00ent  ==
+configurINFatioO: Lne aodf:
+er eleRcesoutiorce:n  di"apspas/vbled1, R.
+esourceThe =depconloynectmioentsn t", Gro thoupVeers serivonKer lind:oca "lhostapps:/8v414,3  Kwas irnedfus=Deed ploy-m edidnt"
+ you speNamecif: "y tngihe nx-irigngrht esshost- conotrrol portler"?
+, NINFO:ames == pacKubee:r n"ektuebse-s adystdonem" 
+ensurObjecet :comp &{mlaetp["ed atapiVe 201rsio9-1n":"0-2apps1T20/v1" :15:"kin48+00d":"D:00 e==ploy
+ment" INFO: == R"emceotnadacilita":mnag wp["ith annodeptatirecaons"ted :lmaap[bel"ku bec==
+tl.kuINFO:bern == Reteecs.ioonci/laslint-apgpli witehd-co adnfigdonura-mationnag":"er "] "llaabebell =s":m=
+ap["addonmanager.kubernetes.io/mode":"Reconcile" "app.kubernetes.io/name":"nginx-ingress-controller" "app.kubernetes.io/part-of":"kube-system"] "name":"nginx-ingress-controller" "namespace":"kube-system"] "spec":map["selector":map["matchLabels":map["addonmanager.kubernetes.io/mode":"Reconcile" "app.kubernetes.io/name":"nginx-ingress-controller" "app.kubernetes.io/part-of":"kube-system"]] "template":map["metadata":map["annotations":map["prometheus.io/port":"10254" "prometheus.io/scrape":"true"] "labels":map["addonmanager.kubernetes.io/mode":"ReconcileINFO" "ap: == Kuberp.kubernetnetees.ios add/nameon re":"ngcioncinx-ingreslse com-cpoletned att 2019roller" "app.kubernetes.io/part-of":"kube-system"]] "spec":map["containe-r10-21T20s:15:4":[map["na8m+e0"0:00 :"nginx-i=ngress-contr=o
+ller" "ports":[map["containerPort":'P' "hostPort":'P'] map["containerPort":'\u01bb' "hostPort":'\u01bb'] map["containerPort":'\u46a0' "hostPort":'\u46a0']] "securityContext":map["capabilities":map["add":["NET_BIND_SERVICE"] "drop":["ALL"]] "runAsUser":'!'] "env":[map["valueFrom":map["fieldRef":map["fieldPath":"metadata.name"]] "name":"POD_NAME"] map["name":"POD_NAMESPACE" "valueFrom":map["fieldRef":map["fieldPath":"metadata.namespace"]]]] "image":"quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.25.1" "livenessProbe":map["timeoutSeconds":'\x01' "httpGet":map["path":"/healthz" "port":'\u280e' "scheme":"HTTP"] "initialDelaySeconds":'\n'] "args":["/nginx-ingress-controller" "--configmap=$(POD_NAMESPACE)/nginx-load-balancer-conf" "--tcp-services-configmap=$(POD_NAMESPACE)/tcp-services" "--udp-services-configmap=$(POD_NAMESPACE)/udp-services" "--annotations-prefix=nginx.ingress.kubernetes.io" "--report-node-internal-ip-address"] "imagePullPolicy":"IfNotPresent" "readinessProbe":map["httpGet":map["path":"/healthz" "port":'\u280e' "scheme":"HTTP"]]]] "serviceAccountName":"nginx-ingress" "terminationGracePeriodSeconds":'<']] "replicas":'\x01']]}
+from server for: "/etc/kubernetes/addons/ingress-dp.yaml": Get https://localhost:8443/apis/apps/v1/namespaces/kube-system/deployments/nginx-ingress-controller: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "/v1, Resource=serviceaccounts", GroupVersionKind: "/v1, Kind=ServiceAccount"
+Name: "nginx-ingress", Namespace: "kube-system"
+Object: &{map["apiVersion":"v1" "kind":"ServiceAccount" "metadata":map["name":"nginx-ingress" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""] "labels":map["addonmanager.kubernetes.io/mode":"Reconcile"]]]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/serviceaccounts/nginx-ingress: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "rbac.authorization.k8s.io/v1beta1, Resource=clusterroles", GroupVersionKind: "rbac.authorization.k8s.io/v1beta1, Kind=ClusterRole"
+Name: "system:nginx-ingress", Namespace: ""
+Object: &{map["apiVersion":"rbac.authorization.k8s.io/v1beta1" "kind":"ClusterRole" "metadata":map["name":"system:nginx-ingress" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""] "labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "kubernetes.io/bootstrapping":"rbac-defaults"]] "rules":[map["apiGroups":[""] "resources":["configmaps" "endpoints" "nodes" "pods" "secrets"] "verbs":["list" "watch"]] map["apiGroups":[""] "resources":["nodes"] "verbs":["get"]] map["verbs":["get" "list" "watch"] "apiGroups":[""] "resources":["services"]] map["apiGroups":["extensions" "networking.k8s.io"] "resources":["ingresses"] "verbs":["get" "list" "watch"]] map["apiGroups":[""] "resources":["events"] "verbs":["create" "patch"]] map["resources":["ingresses/status"] "verbs":["update"] "apiGroups":["extensions" "networking.k8s.io"]]]]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/apis/rbac.authorization.k8s.io/v1beta1/clusterroles/system:nginx-ingress: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "rbac.authorization.k8s.io/v1beta1, Resource=roles", GroupVersionKind: "rbac.authorization.k8s.io/v1beta1, Kind=Role"
+Name: "system::nginx-ingress-role", Namespace: "kube-system"
+Object: &{map["kind":"Role" "metadata":map["name":"system::nginx-ingress-role" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""] "labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "kubernetes.io/bootstrapping":"rbac-defaults"]] "rules":[map["verbs":["get"] "apiGroups":[""] "resources":["configmaps" "pods" "secrets" "namespaces"]] map["apiGroups":[""] "resourceNames":["ingress-controller-leader-nginx"] "resources":["configmaps"] "verbs":["get" "update"]] map["apiGroups":[""] "resources":["configmaps"] "verbs":["create"]] map["verbs":["get"] "apiGroups":[""] "resources":["endpoints"]]] "apiVersion":"rbac.authorization.k8s.io/v1beta1"]}
+from server for: "/etc/kubernetes/addons/ingress-rbac.yaml": Get https://localhost:8443/apis/rbac.authorization.k8s.io/v1beta1/namespaces/kube-system/roles/system::nginx-ingress-role: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "/v1, Resource=serviceaccounts", GroupVersionKind: "/v1, Kind=ServiceAccount"
+Name: "storage-provisioner", Namespace: "kube-system"
+Object: &{map["apiVersion":"v1" "kind":"ServiceAccount" "metadata":map["labels":map["addonmanager.kubernetes.io/mode":"Reconcile"] "name":"storage-provisioner" "namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""]]]}
+from server for: "/etc/kubernetes/addons/storage-provisioner.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/serviceaccounts/storage-provisioner: dial tcp 127.0.0.1:8443: connect: connection refused
+error when retrieving current configuration of:
+Resource: "/v1, Resource=pods", GroupVersionKind: "/v1, Kind=Pod"
+Name: "storage-provisioner", Namespace: "kube-system"
+Object: &{map["spec":map["serviceAccountName":"storage-provisioner" "volumes":[map["hostPath":map["path":"/tmp" "type":"Directory"] "name":"tmp"]] "containers":[map["imagePullPolicy":"IfNotPresent" "name":"storage-provisioner" "volumeMounts":[map["mountPath":"/tmp" "name":"tmp"]] "command":["/storage-provisioner"] "image":"gcr.io/k8s-minikube/storage-provisioner:v1.8.1"]] "hostNetwork":%!q(bool=true)] "apiVersion":"v1" "kind":"Pod" "metadata":map["namespace":"kube-system" "annotations":map["kubectl.kubernetes.io/last-applied-configuration":""] "labels":map["addonmanager.kubernetes.io/mode":"Reconcile" "integration-test":"storage-provisioner"] "name":"storage-provisioner"]]}
+from server for: "/etc/kubernetes/addons/storage-provisioner.yaml": Get https://localhost:8443/api/v1/namespaces/kube-system/pods/storage-provisioner: dial tcp 127.0.0.1:8443: connect: connection refused
+
+==> kube-addon-manager [ce565dbe3499] <==
+find: '/etc/kubernetes/admission-controls': No such file or directory
+error: no objects passed to apply
+error: no objects passed to apply
+error: no objects passed to apply
+error: no objects passed to apply
+INFO: == Generated kubectl prune whitelist flags: --prune-whitelist core/v1/ConfigMap --prune-whitelist core/v1/Endpoints --prune-whitelist core/v1/Namespace --prune-whitelist core/v1/PersistentVolumeClaim --prune-whitelist core/v1/PersistentVolume --prune-whitelist core/v1/Pod --prune-whitelist core/v1/ReplicationController --prune-whitelist core/v1/Secret --prune-whitelist core/v1/Service --prune-whitelist batch/v1/Job --prune-whitelist batch/v1beta1/CronJob --prune-whitelist apps/v1/DaemonSet --prune-whitelist apps/v1/Deployment --prune-whitelist apps/v1/ReplicaSet --prune-whitelist apps/v1/StatefulSet --prune-whitelist extensions/v1beta1/Ingress  ==
+INFO: == Kubernetes addon manager started at 2019-10-21T20:19:44+00:00 with ADDON_CHECK_INTERVAL_SEC=5 ==
+INFO: == Default service account in the kube-system namespace has token default-token-9qrbp ==
+INFO: == Entering periodical apply loop at 2019-10-21T20:19:51+00:00 ==
+INFO: Leader election disabled.
+INFO: == Kubernetes addon ensure completed at 2019-10-21T20:19:52+00:00 ==
+INFO: == Reconciling with deprecated label ==
+INFO: == Reconciling with addon-manager label ==
+deployment.apps/nginx-ingress-controller unchanged
+serviceaccount/nginx-ingress unchanged
+clusterrole.rbac.authorization.k8s.io/system:nginx-ingress unchanged
+role.rbac.authorization.k8s.io/system::nginx-ingress-role unchanged
+serviceaccount/storage-provisioner unchanged
+INFO: == Kubernetes addon reconcile completed at 2019-10-21T20:19:54+00:00 ==
+INFO: Leader election disabled.
+INFO: == Kubernetes addon ensure completed at 2019-10-21T20:19:56+00:00 ==
+INFO: == Reconciling with deprecated label ==
+INFO: == Reconciling with addon-manager label ==
+deployment.apps/nginx-ingress-controller unchanged
+serviceaccount/nginx-ingress unchanged
+clusterrole.rbac.authorization.k8s.io/system:nginx-ingress unchanged
+role.rbac.authorization.k8s.io/system::nginx-ingress-role unchanged
+serviceaccount/storage-provisioner unchanged
+INFO: == Kubernetes addon reconcile completed at 2019-10-21T20:19:58+00:00 ==
+INFO: Leader election disabled.
+INFO: == Kubernetes addon ensure completed at 2019-10-21T20:20:01+00:00 ==
+INFO: == Reconciling with deprecated label ==
+INFO: == Reconciling with addon-manager label ==
+deployment.apps/nginx-ingress-controller unchanged
+serviceaccount/nginx-ingress unchanged
+clusterrole.rbac.authorization.k8s.io/system:nginx-ingress unchanged
+role.rbac.authorization.k8s.io/system::nginx-ingress-role unchanged
+serviceaccount/storage-provisioner unchanged
+INFO: == Kubernetes addon reconcile completed at 2019-10-21T20:20:03+00:00 ==
+INFO: Leader election disabled.
+INFO: == Kubernetes addon ensure completed at 2019-10-21T20:20:06+00:00 ==
+INFO: == Reconciling with deprecated label ==
+INFO: == Reconciling with addon-manager label ==
+deployment.apps/nginx-ingress-controller unchanged
+serviceaccount/nginx-ingress unchanged
+clusterrole.rbac.authorization.k8s.io/system:nginx-ingress unchanged
+role.rbac.authorization.k8s.io/system::nginx-ingress-role unchanged
+serviceaccount/storage-provisioner unchanged
+INFO: == Kubernetes addon reconcile completed at 2019-10-21T20:20:08+00:00 ==
+
+==> kube-apiserver [3873207c49bd] <==
+W1021 20:15:44.935724       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:44.946895       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:44.986292       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:45.116762       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:45.135776       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:45.241960       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:45.256326       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:45.318940       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:47.606863       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:47.858250       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:47.953504       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:47.997813       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.021873       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.065813       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.102837       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.165723       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.208012       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.209055       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.236313       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.256121       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.340330       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.352190       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.359293       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.407424       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.434182       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.444796       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.453966       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.501419       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.502264       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.509295       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.520830       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.545393       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.545734       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.564279       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.566118       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.603058       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.625943       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.627850       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.643183       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.700412       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.701110       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.715985       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.723544       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.730097       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.789808       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.836106       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.845063       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.884967       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.900114       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.907853       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.935776       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.938996       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.972798       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:48.986183       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.038286       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.113390       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.132122       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.162447       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.193124       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+W1021 20:15:49.211095       1 clientconn.go:1120] grpc: addrConn.createTransport failed to connect to {https://127.0.0.1:2379 0  <nil>}. Err :connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:2379: connect: connection refused". Reconnecting...
+
+==> kube-apiserver [39ecf57435d4] <==
+I1021 20:19:48.623763       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.633976       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.634201       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.643209       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.643357       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.653659       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.653776       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.680733       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.680877       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.698694       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.698824       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.707735       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.707893       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.717237       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.717382       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+W1021 20:19:48.842093       1 genericapiserver.go:404] Skipping API batch/v2alpha1 because it has no resources.
+W1021 20:19:48.860759       1 genericapiserver.go:404] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+W1021 20:19:48.911347       1 genericapiserver.go:404] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+W1021 20:19:48.914917       1 genericapiserver.go:404] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+W1021 20:19:48.924528       1 genericapiserver.go:404] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+W1021 20:19:48.939547       1 genericapiserver.go:404] Skipping API apps/v1beta2 because it has no resources.
+W1021 20:19:48.939771       1 genericapiserver.go:404] Skipping API apps/v1beta1 because it has no resources.
+I1021 20:19:48.948411       1 plugins.go:158] Loaded 11 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,MutatingAdmissionWebhook,RuntimeClass.
+I1021 20:19:48.948691       1 plugins.go:161] Loaded 7 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,Priority,PersistentVolumeClaimResize,ValidatingAdmissionWebhook,RuntimeClass,ResourceQuota.
+I1021 20:19:48.950529       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.950648       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:48.960073       1 client.go:361] parsed scheme: "endpoint"
+I1021 20:19:48.960384       1 endpoint.go:66] ccResolverWrapper: sending new addresses to cc: [{https://127.0.0.1:2379 0  <nil>}]
+I1021 20:19:51.241963       1 secure_serving.go:123] Serving securely on [::]:8443
+I1021 20:19:51.244197       1 crd_finalizer.go:274] Starting CRDFinalizer
+I1021 20:19:51.244793       1 apiservice_controller.go:94] Starting APIServiceRegistrationController
+I1021 20:19:51.245023       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I1021 20:19:51.245173       1 available_controller.go:383] Starting AvailableConditionController
+I1021 20:19:51.245330       1 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I1021 20:19:51.245480       1 autoregister_controller.go:140] Starting autoregister controller
+I1021 20:19:51.245511       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I1021 20:19:51.245834       1 controller.go:85] Starting OpenAPI controller
+I1021 20:19:51.245891       1 customresource_discovery_controller.go:208] Starting DiscoveryController
+I1021 20:19:51.246022       1 naming_controller.go:288] Starting NamingConditionController
+I1021 20:19:51.246373       1 establishing_controller.go:73] Starting EstablishingController
+I1021 20:19:51.246465       1 nonstructuralschema_controller.go:191] Starting NonStructuralSchemaConditionController
+I1021 20:19:51.246929       1 apiapproval_controller.go:185] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I1021 20:19:51.247072       1 crdregistration_controller.go:111] Starting crd-autoregister controller
+I1021 20:19:51.247188       1 shared_informer.go:197] Waiting for caches to sync for crd-autoregister
+I1021 20:19:51.254576       1 controller.go:81] Starting OpenAPI AggregationController
+E1021 20:19:51.350213       1 controller.go:154] Unable to remove old endpoints from kubernetes service: no master IPs were listed in storage, refusing to erase all endpoints for the kubernetes service
+I1021 20:19:51.370346       1 shared_informer.go:204] Caches are synced for crd-autoregister 
+I1021 20:19:51.408130       1 controller.go:606] quota admission added evaluator for: leases.coordination.k8s.io
+I1021 20:19:51.475501       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I1021 20:19:51.488371       1 cache.go:39] Caches are synced for AvailableConditionController controller
+I1021 20:19:51.488897       1 cache.go:39] Caches are synced for autoregister controller
+I1021 20:19:52.242512       1 controller.go:107] OpenAPI AggregationController: Processing item 
+I1021 20:19:52.242546       1 controller.go:130] OpenAPI AggregationController: action for item : Nothing (removed from the queue).
+I1021 20:19:52.242562       1 controller.go:130] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I1021 20:19:52.285793       1 storage_scheduling.go:148] all system priority classes are created successfully or already exist.
+I1021 20:19:52.333450       1 controller.go:606] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I1021 20:19:54.188354       1 controller.go:606] quota admission added evaluator for: deployments.apps
+I1021 20:19:54.748556       1 controller.go:606] quota admission added evaluator for: serviceaccounts
+I1021 20:19:54.859321       1 controller.go:606] quota admission added evaluator for: daemonsets.apps
+I1021 20:19:54.900614       1 controller.go:606] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+
+==> kube-controller-manager [189b2b2382e4] <==
+I1021 20:19:47.755415       1 serving.go:319] Generated self-signed cert in-memory
+I1021 20:19:48.192076       1 controllermanager.go:161] Version: v1.16.0
+I1021 20:19:48.192945       1 secure_serving.go:123] Serving securely on 127.0.0.1:10257
+I1021 20:19:48.194617       1 deprecated_insecure_serving.go:53] Serving insecurely on [::]:10252
+I1021 20:19:48.194710       1 leaderelection.go:241] attempting to acquire leader lease  kube-system/kube-controller-manager...
+E1021 20:19:51.378387       1 leaderelection.go:330] error retrieving resource lock kube-system/kube-controller-manager: endpoints "kube-controller-manager" is forbidden: User "system:kube-controller-manager" cannot get resource "endpoints" in API group "" in the namespace "kube-system"
+
+==> kube-controller-manager [e5f62e344a29] <==
+I1021 20:11:51.905912       1 node_lifecycle_controller.go:434] Controller will taint node by condition.
+I1021 20:11:51.905931       1 controllermanager.go:534] Started "nodelifecycle"
+I1021 20:11:51.906031       1 node_lifecycle_controller.go:458] Starting node controller
+I1021 20:11:51.906050       1 shared_informer.go:197] Waiting for caches to sync for taint
+I1021 20:11:52.053780       1 node_lifecycle_controller.go:77] Sending events to api server
+E1021 20:11:52.054256       1 core.go:201] failed to start cloud node lifecycle controller: no cloud provider provided
+W1021 20:11:52.054334       1 controllermanager.go:526] Skipping "cloud-node-lifecycle"
+I1021 20:11:52.303193       1 controllermanager.go:534] Started "replicaset"
+I1021 20:11:52.303769       1 replica_set.go:182] Starting replicaset controller
+I1021 20:11:52.303789       1 shared_informer.go:197] Waiting for caches to sync for ReplicaSet
+I1021 20:11:52.555180       1 controllermanager.go:534] Started "clusterrole-aggregation"
+I1021 20:11:52.555262       1 clusterroleaggregation_controller.go:148] Starting ClusterRoleAggregator
+I1021 20:11:52.555283       1 shared_informer.go:197] Waiting for caches to sync for ClusterRoleAggregator
+I1021 20:11:52.952925       1 controllermanager.go:534] Started "disruption"
+I1021 20:11:52.953544       1 shared_informer.go:197] Waiting for caches to sync for resource quota
+I1021 20:11:52.953232       1 disruption.go:333] Starting disruption controller
+I1021 20:11:52.983232       1 shared_informer.go:197] Waiting for caches to sync for disruption
+I1021 20:11:52.963392       1 shared_informer.go:197] Waiting for caches to sync for garbage collector
+W1021 20:11:52.988398       1 actual_state_of_world.go:506] Failed to update statusUpdateNeeded field in actual state of world: Failed to set statusUpdateNeeded to needed true, because nodeName="minikube" does not exist
+I1021 20:11:53.004025       1 shared_informer.go:204] Caches are synced for ReplicaSet 
+I1021 20:11:53.004457       1 shared_informer.go:204] Caches are synced for certificate 
+I1021 20:11:53.005152       1 shared_informer.go:204] Caches are synced for job 
+I1021 20:11:53.007403       1 shared_informer.go:204] Caches are synced for TTL 
+I1021 20:11:53.008839       1 shared_informer.go:204] Caches are synced for taint 
+I1021 20:11:53.009403       1 node_lifecycle_controller.go:1208] Initializing eviction metric for zone: 
+W1021 20:11:53.009493       1 node_lifecycle_controller.go:903] Missing timestamp for Node minikube. Assuming now as a timestamp.
+I1021 20:11:53.009724       1 node_lifecycle_controller.go:1108] Controller detected that zone  is now in state Normal.
+I1021 20:11:53.010415       1 shared_informer.go:204] Caches are synced for GC 
+I1021 20:11:53.010656       1 taint_manager.go:186] Starting NoExecuteTaintManager
+I1021 20:11:53.010864       1 shared_informer.go:204] Caches are synced for expand 
+I1021 20:11:53.011283       1 event.go:255] Event(v1.ObjectReference{Kind:"Node", Namespace:"", Name:"minikube", UID:"bbbd1ef4-1dba-4687-a138-9eafb78752ab", APIVersion:"", ResourceVersion:"", FieldPath:""}): type: 'Normal' reason: 'RegisteredNode' Node minikube event: Registered Node minikube in Controller
+I1021 20:11:53.021800       1 shared_informer.go:204] Caches are synced for service account 
+I1021 20:11:53.036174       1 shared_informer.go:204] Caches are synced for certificate 
+I1021 20:11:53.038236       1 shared_informer.go:204] Caches are synced for ReplicationController 
+I1021 20:11:53.054425       1 shared_informer.go:204] Caches are synced for PV protection 
+I1021 20:11:53.057495       1 shared_informer.go:204] Caches are synced for endpoint 
+I1021 20:11:53.057714       1 shared_informer.go:204] Caches are synced for PVC protection 
+I1021 20:11:53.058211       1 shared_informer.go:204] Caches are synced for ClusterRoleAggregator 
+I1021 20:11:53.058484       1 shared_informer.go:204] Caches are synced for bootstrap_signer 
+I1021 20:11:53.070425       1 shared_informer.go:204] Caches are synced for namespace 
+I1021 20:11:53.076927       1 shared_informer.go:204] Caches are synced for persistent volume 
+I1021 20:11:53.156733       1 shared_informer.go:204] Caches are synced for attach detach 
+I1021 20:11:53.355085       1 shared_informer.go:204] Caches are synced for HPA 
+I1021 20:11:53.464453       1 shared_informer.go:204] Caches are synced for stateful set 
+I1021 20:11:53.472947       1 shared_informer.go:204] Caches are synced for resource quota 
+I1021 20:11:53.487268       1 shared_informer.go:204] Caches are synced for disruption 
+I1021 20:11:53.487381       1 disruption.go:341] Sending events to api server.
+I1021 20:11:53.504611       1 shared_informer.go:204] Caches are synced for daemon sets 
+I1021 20:11:53.511824       1 shared_informer.go:204] Caches are synced for garbage collector 
+I1021 20:11:53.512038       1 garbagecollector.go:139] Garbage collector: all resource monitors have synced. Proceeding to collect garbage
+I1021 20:11:53.513267       1 shared_informer.go:204] Caches are synced for resource quota 
+I1021 20:11:53.530728       1 event.go:255] Event(v1.ObjectReference{Kind:"DaemonSet", Namespace:"kube-system", Name:"kube-proxy", UID:"1e724e8f-770f-476e-9d9f-77a87bada1c4", APIVersion:"apps/v1", ResourceVersion:"176", FieldPath:""}): type: 'Normal' reason: 'SuccessfulCreate' Created pod: kube-proxy-cxctx
+E1021 20:11:53.550296       1 daemon_controller.go:302] kube-system/kube-proxy failed with : error storing status for daemon set &v1.DaemonSet{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"kube-proxy", GenerateName:"", Namespace:"kube-system", SelfLink:"/apis/apps/v1/namespaces/kube-system/daemonsets/kube-proxy", UID:"1e724e8f-770f-476e-9d9f-77a87bada1c4", ResourceVersion:"176", Generation:1, CreationTimestamp:v1.Time{Time:time.Time{wall:0x0, ext:63707285506, loc:(*time.Location)(0x7776000)}}, DeletionTimestamp:(*v1.Time)(nil), DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string{"k8s-app":"kube-proxy"}, Annotations:map[string]string{"deprecated.daemonset.template.generation":"1"}, OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ClusterName:"", ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.DaemonSetSpec{Selector:(*v1.LabelSelector)(0xc001790600), Template:v1.PodTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:v1.Time{Time:time.Time{wall:0x0, ext:0, loc:(*time.Location)(nil)}}, DeletionTimestamp:(*v1.Time)(nil), DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string{"k8s-app":"kube-proxy"}, Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ClusterName:"", ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.PodSpec{Volumes:[]v1.Volume{v1.Volume{Name:"kube-proxy", VolumeSource:v1.VolumeSource{HostPath:(*v1.HostPathVolumeSource)(nil), EmptyDir:(*v1.EmptyDirVolumeSource)(nil), GCEPersistentDisk:(*v1.GCEPersistentDiskVolumeSource)(nil), AWSElasticBlockStore:(*v1.AWSElasticBlockStoreVolumeSource)(nil), GitRepo:(*v1.GitRepoVolumeSource)(nil), Secret:(*v1.SecretVolumeSource)(nil), NFS:(*v1.NFSVolumeSource)(nil), ISCSI:(*v1.ISCSIVolumeSource)(nil), Glusterfs:(*v1.GlusterfsVolumeSource)(nil), PersistentVolumeClaim:(*v1.PersistentVolumeClaimVolumeSource)(nil), RBD:(*v1.RBDVolumeSource)(nil), FlexVolume:(*v1.FlexVolumeSource)(nil), Cinder:(*v1.CinderVolumeSource)(nil), CephFS:(*v1.CephFSVolumeSource)(nil), Flocker:(*v1.FlockerVolumeSource)(nil), DownwardAPI:(*v1.DownwardAPIVolumeSource)(nil), FC:(*v1.FCVolumeSource)(nil), AzureFile:(*v1.AzureFileVolumeSource)(nil), ConfigMap:(*v1.ConfigMapVolumeSource)(0xc001772780), VsphereVolume:(*v1.VsphereVirtualDiskVolumeSource)(nil), Quobyte:(*v1.QuobyteVolumeSource)(nil), AzureDisk:(*v1.AzureDiskVolumeSource)(nil), PhotonPersistentDisk:(*v1.PhotonPersistentDiskVolumeSource)(nil), Projected:(*v1.ProjectedVolumeSource)(nil), PortworxVolume:(*v1.PortworxVolumeSource)(nil), ScaleIO:(*v1.ScaleIOVolumeSource)(nil), StorageOS:(*v1.StorageOSVolumeSource)(nil), CSI:(*v1.CSIVolumeSource)(nil)}}, v1.Volume{Name:"xtables-lock", VolumeSource:v1.VolumeSource{HostPath:(*v1.HostPathVolumeSource)(0xc001790620), EmptyDir:(*v1.EmptyDirVolumeSource)(nil), GCEPersistentDisk:(*v1.GCEPersistentDiskVolumeSource)(nil), AWSElasticBlockStore:(*v1.AWSElasticBlockStoreVolumeSource)(nil), GitRepo:(*v1.GitRepoVolumeSource)(nil), Secret:(*v1.SecretVolumeSource)(nil), NFS:(*v1.NFSVolumeSource)(nil), ISCSI:(*v1.ISCSIVolumeSource)(nil), Glusterfs:(*v1.GlusterfsVolumeSource)(nil), PersistentVolumeClaim:(*v1.PersistentVolumeClaimVolumeSource)(nil), RBD:(*v1.RBDVolumeSource)(nil), FlexVolume:(*v1.FlexVolumeSource)(nil), Cinder:(*v1.CinderVolumeSource)(nil), CephFS:(*v1.CephFSVolumeSource)(nil), Flocker:(*v1.FlockerVolumeSource)(nil), DownwardAPI:(*v1.DownwardAPIVolumeSource)(nil), FC:(*v1.FCVolumeSource)(nil), AzureFile:(*v1.AzureFileVolumeSource)(nil), ConfigMap:(*v1.ConfigMapVolumeSource)(nil), VsphereVolume:(*v1.VsphereVirtualDiskVolumeSource)(nil), Quobyte:(*v1.QuobyteVolumeSource)(nil), AzureDisk:(*v1.AzureDiskVolumeSource)(nil), PhotonPersistentDisk:(*v1.PhotonPersistentDiskVolumeSource)(nil), Projected:(*v1.ProjectedVolumeSource)(nil), PortworxVolume:(*v1.PortworxVolumeSource)(nil), ScaleIO:(*v1.ScaleIOVolumeSource)(nil), StorageOS:(*v1.StorageOSVolumeSource)(nil), CSI:(*v1.CSIVolumeSource)(nil)}}, v1.Volume{Name:"lib-modules", VolumeSource:v1.VolumeSource{HostPath:(*v1.HostPathVolumeSource)(0xc001790640), EmptyDir:(*v1.EmptyDirVolumeSource)(nil), GCEPersistentDisk:(*v1.GCEPersistentDiskVolumeSource)(nil), AWSElasticBlockStore:(*v1.AWSElasticBlockStoreVolumeSource)(nil), GitRepo:(*v1.GitRepoVolumeSource)(nil), Secret:(*v1.SecretVolumeSource)(nil), NFS:(*v1.NFSVolumeSource)(nil), ISCSI:(*v1.ISCSIVolumeSource)(nil), Glusterfs:(*v1.GlusterfsVolumeSource)(nil), PersistentVolumeClaim:(*v1.PersistentVolumeClaimVolumeSource)(nil), RBD:(*v1.RBDVolumeSource)(nil), FlexVolume:(*v1.FlexVolumeSource)(nil), Cinder:(*v1.CinderVolumeSource)(nil), CephFS:(*v1.CephFSVolumeSource)(nil), Flocker:(*v1.FlockerVolumeSource)(nil), DownwardAPI:(*v1.DownwardAPIVolumeSource)(nil), FC:(*v1.FCVolumeSource)(nil), AzureFile:(*v1.AzureFileVolumeSource)(nil), ConfigMap:(*v1.ConfigMapVolumeSource)(nil), VsphereVolume:(*v1.VsphereVirtualDiskVolumeSource)(nil), Quobyte:(*v1.QuobyteVolumeSource)(nil), AzureDisk:(*v1.AzureDiskVolumeSource)(nil), PhotonPersistentDisk:(*v1.PhotonPersistentDiskVolumeSource)(nil), Projected:(*v1.ProjectedVolumeSource)(nil), PortworxVolume:(*v1.PortworxVolumeSource)(nil), ScaleIO:(*v1.ScaleIOVolumeSource)(nil), StorageOS:(*v1.StorageOSVolumeSource)(nil), CSI:(*v1.CSIVolumeSource)(nil)}}}, InitContainers:[]v1.Container(nil), Containers:[]v1.Container{v1.Container{Name:"kube-proxy", Image:"k8s.gcr.io/kube-proxy:v1.16.0", Command:[]string{"/usr/local/bin/kube-proxy", "--config=/var/lib/kube-proxy/config.conf", "--hostname-override=$(NODE_NAME)"}, Args:[]string(nil), WorkingDir:"", Ports:[]v1.ContainerPort(nil), EnvFrom:[]v1.EnvFromSource(nil), Env:[]v1.EnvVar{v1.EnvVar{Name:"NODE_NAME", Value:"", ValueFrom:(*v1.EnvVarSource)(0xc001790680)}}, Resources:v1.ResourceRequirements{Limits:v1.ResourceList(nil), Requests:v1.ResourceList(nil)}, VolumeMounts:[]v1.VolumeMount{v1.VolumeMount{Name:"kube-proxy", ReadOnly:false, MountPath:"/var/lib/kube-proxy", SubPath:"", MountPropagation:(*v1.MountPropagationMode)(nil), SubPathExpr:""}, v1.VolumeMount{Name:"xtables-lock", ReadOnly:false, MountPath:"/run/xtables.lock", SubPath:"", MountPropagation:(*v1.MountPropagationMode)(nil), SubPathExpr:""}, v1.VolumeMount{Name:"lib-modules", ReadOnly:true, MountPath:"/lib/modules", SubPath:"", MountPropagation:(*v1.MountPropagationMode)(nil), SubPathExpr:""}}, VolumeDevices:[]v1.VolumeDevice(nil), LivenessProbe:(*v1.Probe)(nil), ReadinessProbe:(*v1.Probe)(nil), StartupProbe:(*v1.Probe)(nil), Lifecycle:(*v1.Lifecycle)(nil), TerminationMessagePath:"/dev/termination-log", TerminationMessagePolicy:"File", ImagePullPolicy:"IfNotPresent", SecurityContext:(*v1.SecurityContext)(0xc0016dd0e0), Stdin:false, StdinOnce:false, TTY:false}}, EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"Always", TerminationGracePeriodSeconds:(*int64)(0xc001794198), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"ClusterFirst", NodeSelector:map[string]string{"beta.kubernetes.io/os":"linux"}, ServiceAccountName:"kube-proxy", DeprecatedServiceAccount:"kube-proxy", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:true, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(0xc001786900), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"default-scheduler", Tolerations:[]v1.Toleration{v1.Toleration{Key:"CriticalAddonsOnly", Operator:"Exists", Value:"", Effect:"", TolerationSeconds:(*int64)(nil)}, v1.Toleration{Key:"", Operator:"Exists", Value:"", Effect:"", TolerationSeconds:(*int64)(nil)}}, HostAliases:[]v1.HostAlias(nil), PriorityClassName:"system-node-critical", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil)}}, UpdateStrategy:v1.DaemonSetUpdateStrategy{Type:"RollingUpdate", RollingUpdate:(*v1.RollingUpdateDaemonSet)(0xc0000b3a88)}, MinReadySeconds:0, RevisionHistoryLimit:(*int32)(0xc0017941d8)}, Status:v1.DaemonSetStatus{CurrentNumberScheduled:0, NumberMisscheduled:0, DesiredNumberScheduled:0, NumberReady:0, ObservedGeneration:0, UpdatedNumberScheduled:0, NumberAvailable:0, NumberUnavailable:0, CollisionCount:(*int32)(nil), Conditions:[]v1.DaemonSetCondition(nil)}}: Operation cannot be fulfilled on daemonsets.apps "kube-proxy": the object has been modified; please apply your changes to the latest version and try again
+I1021 20:11:53.555378       1 shared_informer.go:204] Caches are synced for deployment 
+I1021 20:11:53.587469       1 event.go:255] Event(v1.ObjectReference{Kind:"Deployment", Namespace:"kube-system", Name:"coredns", UID:"f3fd8384-8e2b-4b0c-b0e6-f3282dd64054", APIVersion:"apps/v1", ResourceVersion:"165", FieldPath:""}): type: 'Normal' reason: 'ScalingReplicaSet' Scaled up replica set coredns-5644d7b6d9 to 2
+I1021 20:11:53.588902       1 shared_informer.go:204] Caches are synced for garbage collector 
+I1021 20:11:53.659828       1 event.go:255] Event(v1.ObjectReference{Kind:"ReplicaSet", Namespace:"kube-system", Name:"coredns-5644d7b6d9", UID:"0a0616f3-5ced-42b9-b4f7-603315060cb5", APIVersion:"apps/v1", ResourceVersion:"311", FieldPath:""}): type: 'Normal' reason: 'SuccessfulCreate' Created pod: coredns-5644d7b6d9-jg8pn
+I1021 20:11:53.676289       1 event.go:255] Event(v1.ObjectReference{Kind:"ReplicaSet", Namespace:"kube-system", Name:"coredns-5644d7b6d9", UID:"0a0616f3-5ced-42b9-b4f7-603315060cb5", APIVersion:"apps/v1", ResourceVersion:"311", FieldPath:""}): type: 'Normal' reason: 'SuccessfulCreate' Created pod: coredns-5644d7b6d9-5jsbw
+I1021 20:11:55.135435       1 event.go:255] Event(v1.ObjectReference{Kind:"Deployment", Namespace:"kube-system", Name:"nginx-ingress-controller", UID:"41593da5-9218-4dd2-8ea6-19603d5fb467", APIVersion:"apps/v1", ResourceVersion:"343", FieldPath:""}): type: 'Normal' reason: 'ScalingReplicaSet' Scaled up replica set nginx-ingress-controller-57bf9855c8 to 1
+I1021 20:11:56.211312       1 event.go:255] Event(v1.ObjectReference{Kind:"ReplicaSet", Namespace:"kube-system", Name:"nginx-ingress-controller-57bf9855c8", UID:"e2c05c4a-cb08-4544-9bd9-bc8a5cba7d50", APIVersion:"apps/v1", ResourceVersion:"345", FieldPath:""}): type: 'Normal' reason: 'SuccessfulCreate' Created pod: nginx-ingress-controller-57bf9855c8-95gjf
+
+==> kube-proxy [034a8a8a7a06] <==
+W1021 20:19:55.342372       1 server_others.go:329] Flag proxy-mode="" unknown, assuming iptables proxy
+I1021 20:19:55.531333       1 node.go:135] Successfully retrieved node IP: 10.0.2.15
+I1021 20:19:55.531459       1 server_others.go:149] Using iptables Proxier.
+W1021 20:19:55.533762       1 proxier.go:287] clusterCIDR not specified, unable to distinguish between internal and external traffic
+I1021 20:19:55.534625       1 server.go:529] Version: v1.16.0
+I1021 20:19:55.543513       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I1021 20:19:55.543896       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I1021 20:19:55.545675       1 conntrack.go:83] Setting conntrack hashsize to 32768
+I1021 20:19:55.551672       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I1021 20:19:55.551951       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I1021 20:19:55.552803       1 config.go:131] Starting endpoints config controller
+I1021 20:19:55.553356       1 shared_informer.go:197] Waiting for caches to sync for endpoints config
+I1021 20:19:55.553337       1 config.go:313] Starting service config controller
+I1021 20:19:55.553901       1 shared_informer.go:197] Waiting for caches to sync for service config
+I1021 20:19:55.653929       1 shared_informer.go:204] Caches are synced for endpoints config 
+I1021 20:19:55.655279       1 shared_informer.go:204] Caches are synced for service config 
+
+==> kube-proxy [1d71aeff1328] <==
+W1021 20:11:56.404398       1 server_others.go:329] Flag proxy-mode="" unknown, assuming iptables proxy
+I1021 20:11:56.424064       1 node.go:135] Successfully retrieved node IP: 10.0.2.15
+I1021 20:11:56.424099       1 server_others.go:149] Using iptables Proxier.
+W1021 20:11:56.425756       1 proxier.go:287] clusterCIDR not specified, unable to distinguish between internal and external traffic
+I1021 20:11:56.426816       1 server.go:529] Version: v1.16.0
+I1021 20:11:56.435380       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I1021 20:11:56.435420       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I1021 20:11:56.435829       1 conntrack.go:83] Setting conntrack hashsize to 32768
+I1021 20:11:56.440632       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I1021 20:11:56.441116       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I1021 20:11:56.441381       1 config.go:131] Starting endpoints config controller
+I1021 20:11:56.441404       1 shared_informer.go:197] Waiting for caches to sync for endpoints config
+I1021 20:11:56.441430       1 config.go:313] Starting service config controller
+I1021 20:11:56.441438       1 shared_informer.go:197] Waiting for caches to sync for service config
+I1021 20:11:56.542623       1 shared_informer.go:204] Caches are synced for endpoints config 
+I1021 20:11:56.542725       1 shared_informer.go:204] Caches are synced for service config 
+
+==> kube-scheduler [35dc27f2eadd] <==
+I1021 20:19:46.662774       1 serving.go:319] Generated self-signed cert in-memory
+W1021 20:19:51.334184       1 authentication.go:262] Unable to get configmap/extension-apiserver-authentication in kube-system.  Usually fixed by 'kubectl create rolebinding -n kube-system ROLEBINDING_NAME --role=extension-apiserver-authentication-reader --serviceaccount=YOUR_NS:YOUR_SA'
+W1021 20:19:51.339457       1 authentication.go:199] Error looking up in-cluster authentication configuration: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot get resource "configmaps" in API group "" in the namespace "kube-system"
+W1021 20:19:51.339496       1 authentication.go:200] Continuing without authentication configuration. This may treat all requests as anonymous.
+W1021 20:19:51.339505       1 authentication.go:201] To require authentication configuration lookup to succeed, set --authentication-tolerate-lookup-failure=false
+I1021 20:19:51.391642       1 server.go:143] Version: v1.16.0
+I1021 20:19:51.391914       1 defaults.go:91] TaintNodesByCondition is enabled, PodToleratesNodeTaints predicate is mandatory
+W1021 20:19:51.404437       1 authorization.go:47] Authorization is disabled
+W1021 20:19:51.404460       1 authentication.go:79] Authentication is disabled
+I1021 20:19:51.404473       1 deprecated_insecure_serving.go:51] Serving healthz insecurely on [::]:10251
+I1021 20:19:51.405021       1 secure_serving.go:123] Serving securely on 127.0.0.1:10259
+I1021 20:19:52.564101       1 leaderelection.go:241] attempting to acquire leader lease  kube-system/kube-scheduler...
+
+==> kube-scheduler [da68efd63ce3] <==
+I1021 20:11:38.087092       1 serving.go:319] Generated self-signed cert in-memory
+W1021 20:11:43.013160       1 authentication.go:262] Unable to get configmap/extension-apiserver-authentication in kube-system.  Usually fixed by 'kubectl create rolebinding -n kube-system ROLEBINDING_NAME --role=extension-apiserver-authentication-reader --serviceaccount=YOUR_NS:YOUR_SA'
+W1021 20:11:43.013207       1 authentication.go:199] Error looking up in-cluster authentication configuration: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot get resource "configmaps" in API group "" in the namespace "kube-system"
+W1021 20:11:43.013224       1 authentication.go:200] Continuing without authentication configuration. This may treat all requests as anonymous.
+W1021 20:11:43.013237       1 authentication.go:201] To require authentication configuration lookup to succeed, set --authentication-tolerate-lookup-failure=false
+I1021 20:11:43.042740       1 server.go:143] Version: v1.16.0
+I1021 20:11:43.043649       1 defaults.go:91] TaintNodesByCondition is enabled, PodToleratesNodeTaints predicate is mandatory
+W1021 20:11:43.047314       1 authorization.go:47] Authorization is disabled
+W1021 20:11:43.049178       1 authentication.go:79] Authentication is disabled
+I1021 20:11:43.049243       1 deprecated_insecure_serving.go:51] Serving healthz insecurely on [::]:10251
+I1021 20:11:43.050084       1 secure_serving.go:123] Serving securely on 127.0.0.1:10259
+E1021 20:11:43.118546       1 reflector.go:123] k8s.io/kubernetes/cmd/kube-scheduler/app/server.go:236: Failed to list *v1.Pod: pods is forbidden: User "system:kube-scheduler" cannot list resource "pods" in API group "" at the cluster scope
+E1021 20:11:43.121105       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+E1021 20:11:43.122108       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+E1021 20:11:43.125846       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1beta1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+E1021 20:11:43.126329       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+E1021 20:11:43.126383       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+E1021 20:11:43.126415       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+E1021 20:11:43.127725       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1beta1.CSINode: csinodes.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csinodes" in API group "storage.k8s.io" at the cluster scope
+E1021 20:11:43.127973       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+E1021 20:11:43.131107       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+E1021 20:11:43.131458       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+E1021 20:11:44.122135       1 reflector.go:123] k8s.io/kubernetes/cmd/kube-scheduler/app/server.go:236: Failed to list *v1.Pod: pods is forbidden: User "system:kube-scheduler" cannot list resource "pods" in API group "" at the cluster scope
+E1021 20:11:44.124050       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+E1021 20:11:44.129947       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+E1021 20:11:44.132037       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1beta1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+E1021 20:11:44.132351       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+E1021 20:11:44.133228       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+E1021 20:11:44.134417       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+E1021 20:11:44.135182       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1beta1.CSINode: csinodes.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csinodes" in API group "storage.k8s.io" at the cluster scope
+E1021 20:11:44.136148       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+E1021 20:11:44.138718       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+E1021 20:11:44.139555       1 reflector.go:123] k8s.io/client-go/informers/factory.go:134: Failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+I1021 20:11:46.058367       1 leaderelection.go:241] attempting to acquire leader lease  kube-system/kube-scheduler...
+I1021 20:11:46.066611       1 leaderelection.go:251] successfully acquired lease kube-system/kube-scheduler
+
+==> kubelet <==
+-- Logs begin at Mon 2019-10-21 20:19:06 UTC, end at Mon 2019-10-21 20:20:09 UTC. --
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.116925    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.218033    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.318360    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.418786    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.520341    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.620826    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.721152    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.822579    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:49 minikube kubelet[2832]: E1021 20:19:49.923415    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.023783    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.124579    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.225028    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.327051    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.428498    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.529183    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.629464    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.729747    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.830435    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:50 minikube kubelet[2832]: E1021 20:19:50.930838    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:51 minikube kubelet[2832]: E1021 20:19:51.031230    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:51 minikube kubelet[2832]: E1021 20:19:51.132293    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:51 minikube kubelet[2832]: E1021 20:19:51.232500    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.317933    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.322244    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.322453    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.341506    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.342307    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: E1021 20:19:51.352619    2832 kubelet.go:2267] node "minikube" not found
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.357264    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.360825    2832 kubelet_node_status.go:286] Setting node annotation to enable volume controller attach/detach
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440545    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "lib-modules" (UniqueName: "kubernetes.io/host-path/6b5fd395-b8d2-4965-9aa2-84ad78182a89-lib-modules") pod "kube-proxy-cxctx" (UID: "6b5fd395-b8d2-4965-9aa2-84ad78182a89")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440669    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "storage-provisioner-token-xlr2s" (UniqueName: "kubernetes.io/secret/dd9dda67-a064-4ac2-981d-9ee582834347-storage-provisioner-token-xlr2s") pod "storage-provisioner" (UID: "dd9dda67-a064-4ac2-981d-9ee582834347")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440705    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "config-volume" (UniqueName: "kubernetes.io/configmap/a52cdd72-7a8a-4eba-9f7c-8677a7426c99-config-volume") pod "coredns-5644d7b6d9-5jsbw" (UID: "a52cdd72-7a8a-4eba-9f7c-8677a7426c99")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440728    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "coredns-token-9vjvw" (UniqueName: "kubernetes.io/secret/a52cdd72-7a8a-4eba-9f7c-8677a7426c99-coredns-token-9vjvw") pod "coredns-5644d7b6d9-5jsbw" (UID: "a52cdd72-7a8a-4eba-9f7c-8677a7426c99")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440750    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "coredns-token-9vjvw" (UniqueName: "kubernetes.io/secret/3a8ccfd6-0993-4eb7-8ba5-bf04c387bc4b-coredns-token-9vjvw") pod "coredns-5644d7b6d9-jg8pn" (UID: "3a8ccfd6-0993-4eb7-8ba5-bf04c387bc4b")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440770    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "kube-proxy" (UniqueName: "kubernetes.io/configmap/6b5fd395-b8d2-4965-9aa2-84ad78182a89-kube-proxy") pod "kube-proxy-cxctx" (UID: "6b5fd395-b8d2-4965-9aa2-84ad78182a89")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440790    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "xtables-lock" (UniqueName: "kubernetes.io/host-path/6b5fd395-b8d2-4965-9aa2-84ad78182a89-xtables-lock") pod "kube-proxy-cxctx" (UID: "6b5fd395-b8d2-4965-9aa2-84ad78182a89")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440811    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "kube-proxy-token-6jtmj" (UniqueName: "kubernetes.io/secret/6b5fd395-b8d2-4965-9aa2-84ad78182a89-kube-proxy-token-6jtmj") pod "kube-proxy-cxctx" (UID: "6b5fd395-b8d2-4965-9aa2-84ad78182a89")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440833    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "config-volume" (UniqueName: "kubernetes.io/configmap/3a8ccfd6-0993-4eb7-8ba5-bf04c387bc4b-config-volume") pod "coredns-5644d7b6d9-jg8pn" (UID: "3a8ccfd6-0993-4eb7-8ba5-bf04c387bc4b")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.440852    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "tmp" (UniqueName: "kubernetes.io/host-path/dd9dda67-a064-4ac2-981d-9ee582834347-tmp") pod "storage-provisioner" (UID: "dd9dda67-a064-4ac2-981d-9ee582834347")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.541837    2832 reconciler.go:207] operationExecutor.VerifyControllerAttachedVolume started for volume "nginx-ingress-token-z4b79" (UniqueName: "kubernetes.io/secret/feed74d3-4601-4d94-9fd0-ffbf5ec26fd5-nginx-ingress-token-z4b79") pod "nginx-ingress-controller-57bf9855c8-95gjf" (UID: "feed74d3-4601-4d94-9fd0-ffbf5ec26fd5")
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.541946    2832 reconciler.go:154] Reconciler: start to sync state
+Oct 21 20:19:51 minikube kubelet[2832]: W1021 20:19:51.604510    2832 watcher.go:87] Error while processing event ("/sys/fs/cgroup/devices/system.slice/run-rbc0dad4615c14b3191059831eaecf002.scope": 0x40000100 == IN_CREATE|IN_ISDIR): inotify_add_watch /sys/fs/cgroup/devices/system.slice/run-rbc0dad4615c14b3191059831eaecf002.scope: no such file or directory
+Oct 21 20:19:51 minikube kubelet[2832]: W1021 20:19:51.609236    2832 watcher.go:87] Error while processing event ("/sys/fs/cgroup/pids/system.slice/run-rbc0dad4615c14b3191059831eaecf002.scope": 0x40000100 == IN_CREATE|IN_ISDIR): inotify_add_watch /sys/fs/cgroup/pids/system.slice/run-rbc0dad4615c14b3191059831eaecf002.scope: no such file or directory
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.616675    2832 kubelet_node_status.go:114] Node minikube was previously registered
+Oct 21 20:19:51 minikube kubelet[2832]: I1021 20:19:51.616876    2832 kubelet_node_status.go:75] Successfully registered node minikube
+Oct 21 20:19:51 minikube kubelet[2832]: W1021 20:19:51.676459    2832 watcher.go:87] Error while processing event ("/sys/fs/cgroup/pids/system.slice/run-r6dfd82c1d68748ffb5ebecd085db7885.scope": 0x40000100 == IN_CREATE|IN_ISDIR): inotify_add_watch /sys/fs/cgroup/pids/system.slice/run-r6dfd82c1d68748ffb5ebecd085db7885.scope: no such file or directory
+Oct 21 20:19:53 minikube kubelet[2832]: W1021 20:19:53.080066    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-5jsbw through plugin: invalid network status for
+Oct 21 20:19:53 minikube kubelet[2832]: W1021 20:19:53.157078    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-jg8pn through plugin: invalid network status for
+Oct 21 20:19:53 minikube kubelet[2832]: W1021 20:19:53.512957    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-5jsbw through plugin: invalid network status for
+Oct 21 20:19:53 minikube kubelet[2832]: W1021 20:19:53.687890    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/nginx-ingress-controller-57bf9855c8-95gjf through plugin: invalid network status for
+Oct 21 20:19:54 minikube kubelet[2832]: W1021 20:19:54.740234    2832 pod_container_deletor.go:75] Container "31d05a911375ce9ed90ac6182a0b19224106eacbbd0cc7c7ecc44bf688da1b2b" not found in pod's containers
+Oct 21 20:19:54 minikube kubelet[2832]: W1021 20:19:54.863216    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/nginx-ingress-controller-57bf9855c8-95gjf through plugin: invalid network status for
+Oct 21 20:19:55 minikube kubelet[2832]: W1021 20:19:55.182132    2832 pod_container_deletor.go:75] Container "707d36505c2ed6ebb56506f1275c1a28937dac720d972b63594aff53a577e07a" not found in pod's containers
+Oct 21 20:19:55 minikube kubelet[2832]: W1021 20:19:55.225079    2832 pod_container_deletor.go:75] Container "79bee248ce28e3ab9921422988fc0a6f584e6b7cf0df194bebd916501aec6a8f" not found in pod's containers
+Oct 21 20:19:55 minikube kubelet[2832]: W1021 20:19:55.235163    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-jg8pn through plugin: invalid network status for
+Oct 21 20:19:55 minikube kubelet[2832]: W1021 20:19:55.257490    2832 pod_container_deletor.go:75] Container "085faee53a109f92cb86e9677a713bf31c224074ff76b2a8c1865c457607faff" not found in pod's containers
+Oct 21 20:19:56 minikube kubelet[2832]: W1021 20:19:56.288441    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-5jsbw through plugin: invalid network status for
+Oct 21 20:19:56 minikube kubelet[2832]: W1021 20:19:56.299226    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/nginx-ingress-controller-57bf9855c8-95gjf through plugin: invalid network status for
+Oct 21 20:19:56 minikube kubelet[2832]: W1021 20:19:56.325853    2832 docker_sandbox.go:394] failed to read pod IP from plugin/docker: Couldn't find network status for kube-system/coredns-5644d7b6d9-jg8pn through plugin: invalid network status for
+
+==> storage-provisioner [2a4481b90792] <==
+
+==> storage-provisioner [2ab6054ef170] <==

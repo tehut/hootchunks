@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memcache-hoot
+  labels:
+    app: hootcache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hootcache
+  template:
+    metadata:
+      labels:
+        app: hootcache
+    spec:
+      containers:
+      - name: memcache-hoot
+        image: tahootyhoot/memcache-hoot
+        ports:
+        - containerPort: 11211
+        env:
+        - name: SERVICE
+          value: null
+
