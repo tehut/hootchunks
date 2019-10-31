@@ -76,7 +76,7 @@ def check_cache(key, checksum, chunks, client, cache_limit=50, update=False):
                 raise hooterrors.KeyCollision("The key associated with your request was located in the cache with an unexpected value")
         else:
             pass
-    client.close()
+
 
 def cache_chunks(key, checksum, chunks, client):
     key_value ="{}:hash".format(key).strip(' ')
@@ -96,7 +96,7 @@ def cache_chunks(key, checksum, chunks, client):
         client.delete_many(set_list)
         client.delete(key_value)
         raise hooterrors.CacheWrite()
-    client.close()
+
 
 def read_chunks_to_bites(chunk_list, length_original, key):
     f = io.BytesIO()
@@ -141,6 +141,7 @@ def ReadFromCache(key, serviceIP='localhost'):
     file_stream = read_chunks_to_bites(file_chunks, length, key).getvalue() 
     stream_hash = mmh3.hash(file_stream, signed=False)
     check_the_sums(original_hash, stream_hash)
+    client.close()
     return file_stream
 
 def FlushCache(serviceIP='localhost'):

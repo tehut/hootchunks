@@ -4,29 +4,14 @@
 
 ## Usage
 ### Run
-With extant minikube cluster
-
-    - source run.sh
-    - run
-    
-Build minikube cluster
-
-    - source run.sh
-    - launch_cluster
-    - run
-
-The last line of the run command will output the base endpoint open as a NodePort on your cluster
+*  `source run.sh`
+* `run local`
 
 ## Endpoints
 - base url: host/hootcache/api/v1.0/files
-- get(): returns `cached_files` list of files added since launch of api
-- get(/files/<file-name>): returns stream of file contents
-- post(/files/<file-name>): posts file, returns key and adds it to `cached_files` list
-    
-### Cleanup
-    - source run.sh
-    - clean_services
-    - clean_cluster
+- get(): returns `cached_files` list of files added since launch of api: ` curl <host>/hootcache/api/v1.0/files`
+- get(/files/<file-name>): returns stream of file contents: `<host>/hootcache/api/v1.0/files/<filename`
+- post(/files/<file-name>): posts file, returns key and adds it to `cached_files` list: ` <host>/hootcache/api/v1.0/files/<filename>`
     
     
 ## Repo Contents

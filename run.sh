@@ -23,14 +23,15 @@ function run(){
 	echo "Send Curl and postman requests to $api/hootcache/api/v1.0/files" 
 }
 
+
 function clean_services(){
 	kubectl delete deployments -l app=hootcache
 	kubectl delete services -l app=hootcache
 }
 
-function run_containers(){
+function run_local(){
 	docker run -d -p 11211:11211 tahootyhoot/memcache-hoot
-	docker run -d -p 5000:5000 tahootyhoot/hootcahe
+	python3 app/app.py "localhost:11211"
 }
 
 function clean_cluster(){
